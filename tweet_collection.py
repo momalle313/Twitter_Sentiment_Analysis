@@ -60,11 +60,14 @@ if __name__ == "__main__":
 			keywords[i] = '#' + keywords[i]
 
 	# Consumer keys and access token
-	consumer_key = 'l6h9Z40w3SM3QdFrRWH2hKVoL'
-	consumer_secret = 'tPB3xDHDTnr3FjgV2pRKnc4mMBQyviPWyVmLqgYU4WaBc9BVI0'
-	access_token = '960373416892170240-omnMrJJ2NDSkSL4HTEMEqgQlpIPsjQw'
-	access_token_secret = 'KXs1K4jgmSe5pWCCWEhNZxiUR7wEkeo9KxNrSfhG7bk8a'
-	 
+	#consumer_key = 'l6h9Z40w3SM3QdFrRWH2hKVoL'
+	consumer_key = 'kamqWW85IkVhJusJqd2ESevJF'
+        #consumer_secret = 'tPB3xDHDTnr3FjgV2pRKnc4mMBQyviPWyVmLqgYU4WaBc9BVI0'
+	consumer_secret = '9EEMxbeT3tl1tb6n0yWbn1WJ7Z8rpFuWlf0AxnxvMwwK8u9d1j'
+        #access_token = '960373416892170240-omnMrJJ2NDSkSL4HTEMEqgQlpIPsjQw'
+        access_token = '868515705485963264-5rAylTUvV19R4jK69ZrgtAMrHZYZZNM'	
+        #access_token_secret = 'KXs1K4jgmSe5pWCCWEhNZxiUR7wEkeo9KxNrSfhG7bk8a'
+	access_token_secret = 'pD6FyXnDyaEGrPJNgGFFHqQ3h7UgH4SGdarHiLa87ZIAX'
 	# OAuth process
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_token, access_token_secret)
