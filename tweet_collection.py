@@ -18,8 +18,8 @@ class StreamListener(tweepy.StreamListener):
 		
 	# Open output file to append to
 	now = datetime.datetime.now()
-	output = open(now.strftime("%Y-%m-%d") + '_Tweets.txt', 'a+')
-	output.write("Keyword: " + str(sys.argv[1]))
+	output = open('#' + sys.argv[1] + '_Tweets.txt', 'a+')
+	output.write("Keyword: " + str(sys.argv[1]) + '\n\n')
 	num = 0
 
 	# When a status is found, record the necessary information
