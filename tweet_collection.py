@@ -1,7 +1,5 @@
 #!/usr/bin/python
 import sys
-import getopt
-import datetime
 import tweepy
 
 ### Michael O'Malley, Michael Burke
@@ -17,7 +15,6 @@ def usage():
 class StreamListener(tweepy.StreamListener):
 		
 	# Open output file to append to
-	now = datetime.datetime.now()
 	output = open('#' + sys.argv[1] + '_Tweets.txt', 'a+')
 	output.write("Keyword: " + str(sys.argv[1]) + '\n\n')
 	num = 0
